@@ -1,6 +1,6 @@
 # Yuyang Shen - Personal Academic Homepage
 
-🌐 **Live Website:** [https://yuyangshen.github.io](https://yuyangshen.github.io)
+🌐 **Live Website:** [https://ethan-shen-individual-lab.github.io/yuyangshen.github.io/](https://ethan-shen-individual-lab.github.io/yuyangshen.github.io/)
 
 A modern, responsive personal homepage for academic researchers and professionals, built with clean HTML, CSS, and JavaScript.
 

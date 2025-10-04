@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuyang Shen - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="links.html">Links</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-cell">
+                    <h1>Projects</h1>
+
+                    <p><em>All project code repositories are available at: <a href="https://github.com/Ethan-Shen-Individual-Lab" target="_blank">GitHub - Ethan-Shen-Individual-Lab</a></em></p>
+
+                    <h2>Research Projects</h2>
+
+                    <h3>Deep Reinforcement Learning for Financial Trading</h3>
+                    <p><strong>Shenzhen Research Institute of Big Data</strong>, 2025-Present</p>
+                    <p>Developing a deep reinforcement learning framework for financial trading that combines advanced feature representation with policy optimization. The project explores novel neural architectures to capture complex market dynamics and improve trading decision-making across multiple asset classes.</p>
+
+                    <h3>Mamba Hawkes Process for Time Series Prediction</h3>
+                    <p><strong>Shenzhen Research Institute of Big Data</strong>, 2025-Present</p>
+                    <p>Working on enhancing the Mamba Hawkes Process architecture for irregular time series prediction. The research investigates key architectural components and proposes improvements to model efficiency and predictive performance on temporal point process benchmarks.</p>
+
+                    <h3>Demand Forecasting and Inventory Optimization</h3>
+                    <p><strong>Shenzhen Research Institute of Big Data</strong>, 2025-Present</p>
+                    <p>Developed an end-to-end deep learning model for large-scale retailer inventory management. This model features a novel joint loss function balancing forecast accuracy and profit, enabling direct generation of target inventory levels. Compared to traditional two-step methods (Monte Carlo forecasting + News Vendor decision), it achieves comparable profitability with greater inventory flexibility, particularly beneficial for volatile demand environments.</p>
+
+                    <h3>Bridging OLS and Deep Neural Networks (Working Paper)</h3>
+                    <p><strong>Independent Research</strong>, 2025-Present</p>
+                    <p><strong>Abstract:</strong> This study develops a generalized methodological framework establishing theoretical connections between Ordinary Least Squares (OLS) and deep learning architectures. Building upon Goulet Coulombe's (2025) work linking OLS with attention mechanisms, we address two restrictive conditions that limit practical applicability: (i) orthogonalization requirements between training and test set weight matrices, and (ii) simplification to identity activation functions. To enable broader generalization, we introduce novel regularization terms in the loss function and design specialized activation functions that preserve the OLS-deep learning correspondence under more relaxed conditions. Furthermore, we investigate whether equivalence relationships can be established between OLS and other deep learning architectures beyond attention mechanisms under specific parameterizations.</p>
+
+                    <h3>SAMBA for Stock Return Forecasting</h3>
+                    <p><strong>The Chinese University of Hong Kong</strong>, 2025</p>
+                    <p>Replicated SAMBA (Mehrabian et al., arXiv:2410.03707) to forecast stock excess returns. This model integrates Bidirectional Mamba architecture with Generative Adversarial Networks (GAN) to capture complex temporal patterns. Performed hands-on implementation in Python, covering experiment design and benchmarking against traditional machine learning approaches, ultimately achieving superior forecasting accuracy.</p>
+
+                    <h3>Dynamic Factor Model</h3>
+                    <p><strong>The Chinese University of Hong Kong</strong>, 2025</p>
+                    <p>Implemented Dynamic Factor Model (DFM) within a state-space framework to extract latent economic signals. Developed a novel estimation procedure by framing DFM as a differentiable model, enabling parameter inference via gradient-based optimization of a custom loss function.</p>
+
+                    <h2>Industry Projects</h2>
+
+                    <h3>AI Agent Based Automated Investment Factor Mining System</h3>
+                    <p><strong>Guolian Fund Management Co., Ltd. – Industry-Sponsored Project</strong>, 2025.1-2025.5</p>
+                    <p>Developed a GPT-based AI Agent on APPL framework to automate quantitative factor discovery lifecycle. The system comprises three specialized agents: FactorAgent to generate investment hypotheses (using CoT & RAG); CalculatorAgent to validate mathematical formulas; and CodeAgent to translate formulas into Python codes for stock return prediction evaluation (on IC, Sharpe Ratio). This automated system reduced factor development time from weeks to hours and consistently generated factors with Information Coefficient (IC) above 0.07.</p>
+
+                    <h3>Fintechathon International Fintech Contest (Top 10 in AI Track)</h3>
+                    <p><strong>Competition Project</strong>, 2024.10-2024.12</p>
+                    <p><strong>System Development:</strong> Engineered and deployed a data analysis web platform, architecting the system with a Python back-end for data processing and a dynamic front-end (JavaScript, HTML, CSS) for intuitive user interaction. The application's core features include real-time, interactive chart visualizations and is further enhanced by an integrated, LLM-powered intelligent agent, built on the Coze workflow framework, to provide advanced analytical and user support.</p>
+                    <p><strong>Federated Learning:</strong> Developed a federated fault prediction model for industrial machines, implemented using FATE (Federal AI Technology Enabler) framework. This approach addresses data scarcity by enabling multiple organizations to collaboratively train a robust, shared model without compromising data privacy, leading to significantly higher prediction accuracy.</p>
+
+                    <h2>Work Projects</h2>
+
+                    <h3>AI-Driven Automated Competitive Analysis System</h3>
+                    <p><strong>Baidu Online Network Technology Co., Ltd.</strong>, 2025-Present</p>
+                    <p>Automated the generation of weekly competitive advertising reports using an AI pipeline. The workflow leverages web crawlers for data collection, then uses API calls to Gemini 2.5 Pro for summarization and GPT-O3 for temporal analysis. This system reduced manual effort by 80% while improving report accuracy and consistency.</p>
+
+                    <h3>AI-Driven Video Ad Performance Prediction</h3>
+                    <p><strong>Baidu Online Network Technology Co., Ltd.</strong>, 2025-Present</p>
+                    <p>Developed a framework using Gemini's multimodal capabilities and Chain-of-Thought (CoT) prompting to predict advertising video sales lift. The system analyzes video content by performing shot segmentation and element extraction to create predictive features, significantly improving forecast accuracy through iterative training.</p>
+
+                    <h3>LLM-Powered Sentiment Analysis</h3>
+                    <p><strong>Peking University PHBS</strong>, 2024-2025</p>
+                    <p>Developed a pipeline to analyze 240,000 e-commerce reviews for regression analysis on review helpfulness. Feature set includes: (1) AI-Generated Metrics: Fine-tuned BERT model to score 28 emotional dimensions (e.g., disappointment), and a prompted LLM (DeepSeek V3 API) to extract 9 granular metrics (e.g., objectivity, effort, readability); (2) Control Variables: Over 30 controls capturing review linguistics (log word count, capital ratio), reviewer history (expert reviewer), product attributes (product popularity), and product category fixed effects.</p>
+
+                    <h3>Macroeconomic Large Language Model Development</h3>
+                    <p><strong>PingAn Technology (Shenzhen) Co., Ltd.</strong>, 2024-2025</p>
+                    <p>Participated in a government-led project on macroeconomics large language models, focusing on the design and implementation of models for financial and macroeconomic analysis. Responsible for constructing robust data pipelines, optimizing training methodologies, and conducting rigorous performance evaluations to ensure the models' accuracy and reliability in domain-specific applications. Analyzed the impact pathways and interrelationships among economic indicators within financial systems and macroeconomics. Developed a vector-based knowledge base to support the training of large language models, enhancing their capability to predict economic trends, market behaviors, and policy effects.</p>
+
+                    <h3>Machine Learning for Video Scoring</h3>
+                    <p><strong>Kuaishou Technology Co., Ltd</strong>, 2024</p>
+                    <p>Utilized SQL for data extraction and Python for machine learning to support the algorithm team in developing scoring metrics for cold-start videos. Categorized variables based on business logic and applied logistic regression and XGBoost to analyze influencing factors, validate models, and construct video scoring buckets. Conducted a buyer journey analysis to inform Conversion Rate (CVR) optimization. Deconstructed the user funnel into key stages (reach, clicks, add-to-cart, purchase) and analyzed influencing factors like video duration and cross-category buyer characteristics.</p>
+
+                    <div class="footer">
+                        <p>Page generated 2025-10-04, by Yuyang Shen.</p>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>
